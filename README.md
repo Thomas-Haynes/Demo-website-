@@ -54,6 +54,6 @@ Multi page demo website. Each link in nav-bar takes the user directly to the htm
 - Add animations for when the user navigates between pages.
 
 ## Site demo: 
-
+![Demo screenshot](website-demo.png)
 ### Built by Tom using my own knowledge, aswell as external resources and tutorials. 
   
