@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sale Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header with navigation -->
+  <header>
+    <h1 class="heading">
+      <a href="index.html" class="home-link">Cosmetics Company Website</a>
+    </h1>
+    <button class="clear-cart">Clear Cart</button>
+    <nav class="nav-bar">
+      <div class="nav-content">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="bestsellers.html" class="nav-link">Best Sellers</a></li>
+          <li><a href="new.html" class="nav-link">New</a></li>
+          <li><a href="sale.html" class="nav-link">Sale</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+       <div class="cart-container">
+  <a href="cart.html" class="cart-link" aria-label="View cart">
+    <button class="cart-button">
+      <img src="images/shopping.png" alt="Cart">
+      <span class="cart-badge" id="cart-count">0</span>
+    </button>
+  </a>
+</div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="sale">
+    <h2 class="sale">OUR YEARLY SUMMER SALE! NEW ITEMS ADDED DAILY!</h2>
+    <p class="subheading">All products below are now 25% off! No minimum purchase required ☀️</p>
+  </section>
+
+  <!-- Featured Products -->
+  <section id="shop">
+    <h2 class="showcase">Our Featured Products</h2>
+
+    <!-- Product 1 -->
+    <article class="product" data-id="sale-001">
+      <h3 class="product-title">Combo package of skincare essentials</h3>
+      <div class="product-layout">
+        <img src="images/banner.jpg" alt="Product Range" class="items" />
+        <div class="product-description">
+          <p>Our best seller receives its biggest ever discount! A set of 4 products to act as your all-you-can-need skincare solution.</p>
+        </div>
+        <div class="product-actions">
+          <div class="quantity-selector">
+            <button class="qty-btn decrease">−</button>
+            <input type="number" class="quantity" value="1" min="1" />
+            <button class="qty-btn increase">+</button>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Product 2 -->
+    <article class="product" data-id="sale-002">
+      <h3 class="product-title">Anti-wrinkle skincare range</h3>
+      <div class="product-layout">
+        <img src="images/product1.jpg" alt="Anti-wrinkle range" class="items" />
+        <div class="product-description">
+          <p>Our newest collection of formulations specifically designed to target wrinkled and aged skin...</p>
+        </div>
+        <div class="product-actions">
+          <div class="quantity-selector">
+            <button class="qty-btn decrease">−</button>
+            <input type="number" class="quantity" value="1" min="1" />
+            <button class="qty-btn increase">+</button>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Product 3 -->
+    <article class="product" data-id="sale-003">
+      <h3 class="product-title">Hydrating night cream</h3>
+      <div class="product-layout">
+        <img src="images/product2.jpg" alt="Hydrating night cream" class="items" />
+        <div class="product-description">
+          <p>Deeply moisturising night cream designed to restore skin hydration while you sleep...</p>
+        </div>
+        <div class="product-actions">
+          <div class="quantity-selector">
+            <button class="qty-btn decrease">−</button>
+            <input type="number" class="quantity" value="1" min="1" />
+            <button class="qty-btn increase">+</button>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We make skincare.</p>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog">
+    <h2>Latest News</h2>
+    <article>
+      <h3>Blog</h3>
+      <p>Nothing for now. Check back later.</p>
+    </article>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 style="display: inline-block; margin-right: 1rem;">Contact Us</h2>
+    <a href="contact.html" class="contact-button">How can we help?</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Demo project store. No copyright.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>

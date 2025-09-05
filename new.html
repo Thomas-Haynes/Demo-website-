@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Products</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+  <header>
+    <h1 class="heading">
+      <a href="index.html" class="home-link">Cosmetics company website</a>
+    </h1>
+    <button class="clear-cart">Clear Cart</button>
+    <nav class="nav-bar">
+      <div class="nav-content">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="bestsellers.html" class="nav-link">Best Sellers</a></li>
+          <li><a href="new.html" class="nav-link">New</a></li>
+          <li><a href="sale.html" class="nav-link">Sale</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="cart-container">
+  <a href="cart.html" class="cart-link" aria-label="View cart">
+    <button class="cart-button">
+      <img src="images/shopping.png" alt="Cart">
+      <span class="cart-badge" id="cart-count">0</span>
+    </button>
+  </a>
+</div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="bestseller">
+    <h2 class="sale">Newly released products</h2>
+  </section>
+
+  <section id="shop">
+    <div>
+      <!-- Product 1 -->
+      <article class="product" data-id="new-001">
+        <h3 class="product-title">Brightening face mask</h3>
+        <div class="product-layout">
+          <img src="images/facemask.png" alt="Brightening face mask" class="items" />
+          <div class="product-description">
+            <p>Sheet mask that brightens skin tone and reduces dark circles.</p>
+          </div>
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button class="qty-btn decrease">−</button>
+              <input type="number" class="quantity" value="1" min="1" />
+              <button class="qty-btn increase">+</button>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="product" data-id="new-002">
+        <h3 class="product-title">Moisturising cream</h3>
+        <div class="product-layout">
+          <img src="images/cream.jpg" alt="Moisturising night cream" class="items" />
+          <div class="product-description">
+            <p>This moisturising night cream is designed to work while you sleep, delivering long-lasting hydration and supporting your skin’s natural repair cycle. Formulated with nourishing botanicals and skin-loving ingredients, it helps reduce dryness, improve elasticity, and leave your skin feeling soft, smooth, and refreshed by morning.</p>
+            <ul>
+              <li>Suitable for all skin types</li>
+              <li>Lightweight, non-greasy texture</li>
+              <li>Dermatologist-tested</li>
+              <li>Free from parabens and synthetic fragrances</li>
+            </ul>
+          </div>
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button class="qty-btn decrease">−</button>
+              <input type="number" class="quantity" value="1" min="1" />
+              <button class="qty-btn increase">+</button>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="product" data-id="new-003">
+        <h3 class="product-title">Hydrating night cream</h3>
+        <div class="product-layout">
+          <img src="images/serum.png" alt="Revive+ Skin Serum" class="items" />
+          <div class="product-description">
+            <p>Targeted hydration. Visible renewal. Lightweight precision.  
+            Revive+ Skin Serum delivers concentrated active ingredients to hydrate, smooth, and visibly improve skin texture. Designed for daily use, this fast-absorbing formula penetrates deeply to support collagen production, reduce fine lines, and restore a healthy glow — without clogging pores or leaving residue.</p>
+            <ul>
+              <li>Powered by hyaluronic acid + vitamin C</li>
+              <li>Suitable for sensitive and combination skin</li>
+              <li>Fragrance-free and non-comedogenic</li>
+              <li>Ideal for layering under moisturiser or makeup</li>
+            </ul>
+          </div>
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button class="qty-btn decrease">−</button>
+              <input type="number" class="quantity" value="1" min="1" />
+              <button class="qty-btn increase">+</button>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We make skincare.</p>
+  </section>
+
+  <section id="blog">
+    <h2>Latest News</h2>
+    <article>
+      <h3>Blog</h3>
+      <p>Nothing for now. Check back later.</p>
+    </article>
+  </section>
+
+  <section id="contact">
+    <h2 style="display: inline-block; margin-right: 1rem;">Contact Us</h2>
+    <a href="contact.html" class="contact-button">How can we help?</a>
+  </section>
+
+  <footer>
+    <p>&copy; Demo project store. No copyright.</p>
+  </footer>
+
+  <!--  Scripts -->
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1 class="heading">
+      <a href="index.html" class="home-link">Cosmetics company website</a>
+    </h1>
+    <button class="clear-cart">Clear Cart</button>
+    <nav class="nav-bar">
+      <div class="nav-content">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="bestsellers.html" class="nav-link">Best Sellers</a></li>
+          <li><a href="new.html" class="nav-link">New</a></li>
+          <li><a href="sale.html" class="nav-link">Sale</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="cart-container">
+          <button class="cart-button">
+            <img src="images/shopping.png" alt="Cart">
+            <span class="cart-badge" id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="cart-main">
+    <h2 class="cart-heading">Your Shopping Cart</h2>
+    <div id="cart-items"></div>
+
+    <div class="cart-actions" role="group" aria-label="Cart options">
+    <button type="button" class="btn checkout-btn">Checkout</button>
+    <button type="button" class="btn continue-btn" onclick="window.location.href='index.html'">Continue Shopping</button>
+</div>
+  </main>
+
+  <!-- About section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We make skincare.</p>
+  </section>
+
+  <!-- Blog or updates section -->
+  <section id="blog">
+    <h2>Latest News</h2>
+    <article>
+      <h3>Blog</h3>
+      <p>Nothing for now. Check back later.</p>
+    </article>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact">
+    <h2 style="display: inline-block; margin-right: 1rem;">Contact Us</h2>
+    <a href="contact.html" class="contact-button">How can we help?</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Demo project store. No copyright.</p>
+  </footer>
+ 
+  <script src="cart.js" defer></script>
+</body>
+</html>
